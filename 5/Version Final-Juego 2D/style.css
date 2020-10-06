@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+canvas {
+  transition: 0.5s;
+  display: block;
+  cursor: none;
+  position: fixed;
+  right: -100%;
+  transition: 1s;
+}
+
+canvas.moverCanvas {
+  position: relative;
+  right: 0;
+  margin: 50px auto 0 auto;
+}
+
+.inicio {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  left: 0;
+  transition: 1s;
+}
+
+.inicio .menu {
+  display: block;
+  width: 50%;
+  height: 100vh;
+}
+
+.inicio .menu form {
+  display: block;
+  margin: 0 auto;
+}
+
+.inicio form ul {
+  list-style: none;
+  width: 50%;
+  margin: auto;
+}
+
+.inicio form ul li {
+  padding: 7px;
+  justify-content: space-between;
+  display: flex;
+}
+
+.inicio form ul li input[type="text"] {
+  border: none;
+  padding: 0 5px;
+  border-bottom: solid 2px #111111;
+}
+
+#boton, .volver{
+  background-color: #2196f3;
+  color: #ffffff;
+  display: block;
+  font-weight: 600;
+  border: none;
+  padding: 10px;
+  margin: auto;
+  width: 150px;
+}
+
+#boton:hover,.volver:hover {
+  background-color: #f32f21d2;
+  cursor: pointer;
+}
+
+.inicio .presentacion {
+  display: block;
+  margin: auto;
+  width: 50%;
+  height: 100vh;
+  text-align: center;
+  color: #111111;
+}
+
+.inicio .presentacion h3 {
+  border-bottom: solid 2px #111111;
+  display: inline-block;
+}
+
+.inicio .presentacion img {
+  width: 80%;
+  padding: 100px 0;
+}
+
+.inicio.mover {
+  left: -100%;
+}
+
+.ganar, .perder {
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  display: block;
+  margin: auto;
+  position: fixed;
+  left: -100%;
+  transition: 1s;
+}
+
+.ganar.mover, .perder.mover {
+  left: 0;
+}
+
+.ganar img, .perder img{
+    display: block;
+    margin: 100px auto 0 auto;
+    box-shadow: 20px 20px 10px #333333;
+}
+
+.volver{
+    margin-top: 30px;
+}
+
+@media screen and ( max-width: 1500px){
+  .inicio {
+    display: block;
+    position: relative;
+  }
+  
+  .inicio .menu {
+    display: block;
+    width: 100%;
+  }
+
+  canvas{
+    position: fixed;
+    top: -100vh;
+    height: 80vh;
+    width: 80%;
+  }
+
+  .ganar, .perder {
+    top: 0;
+  }
+  
+  .ganar img, .perder img{
+      margin: 50px auto 0 auto;
+  }
+}

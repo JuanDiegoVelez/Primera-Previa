@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Juego 2D</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a name="arriba"></a>
+    <div class="inicio">
+        <div class="presentacion">
+            <h2>Juego 2D JavaScript</h2>
+            <img src="img/foto.PNG" alt="juego 2D" />
+            <h3>Usar Misil: tecla Espacio</h3>
+            <p>
+                Al comenzar el juego debe dar click, de lo contrario al darle espacio
+                se mostrara esta sección
+            </p>
+        </div>
+        <div class="menu">
+            <h2>Configuraciones</h2>
+            <form action="">
+                <ul>
+                    <li>
+                        Color del Texto:
+                        <input id="cT" type="text" placeholder="#2196f3" />
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Color del canvas No.1:
+                        <input id="cC1" type="text" placeholder="#b2b2b2" />
+                    </li>
+                    <li>
+                        Color del canvas No.2:
+                        <input id="cC2" type="text" placeholder="#222222" />
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Color de la bola No.1:
+                        <input id="cB1" type="text" placeholder="#6317B9" />
+                    </li>
+                    <li>
+                        Color de la bola No.2:
+                        <input id="cB2" type="text" placeholder="#2196f3" />
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Tamaño de la bola No.1:
+                        <input id="tB1" type="text" placeholder="10" />
+                    </li>
+                    <li>
+                        Tamaño de la bola No.2:
+                        <input id="tB2" type="text" placeholder="8" />
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Número de filas:
+                        <input id="numFilas" type="text" placeholder="Menor a 15" />
+                    </li>
+                    <li>
+                        Número de columnas:
+                        <input id="numColumnas" type="text" placeholder="Menor a 9" />
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Color No.1 de ladrillos:
+                        <input id="cL1" type="text" placeholder="#e61c1cdc" />
+                    </li>
+                    <li>
+                        Color No.2 de ladrillos:
+                        <input id="cL2" type="text" placeholder="#e4bb06fa" />
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Jugar con 2 bolas:
+                        <input id="check" type="checkbox" value="2" />
+                    </li>
+                    <li>
+                        Cantidad de vidas:
+                        <input id="vidas" type="text" placeholder="3" />
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Cantidad de misiles:
+                        <input id="misiles" type="text" placeholder="3" />
+                    </li>
+                    <li>
+                        Tamaño de la Paleta:
+                        <input id="paleta" type="text" placeholder="100" />
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Color de la Paleta:
+                        <input id="cP" type="text" placeholder="#f5d109" />
+                    </li>
+                    <li>
+                        <input id="boton" type="submit" value="JUGAR" onclick="jugar()" />
+                    </li>
+                </ul>
+            </form>
+        </div>
+        
+    </div>
+
+    <canvas id="miCanvas" width="1200" height="640"> </canvas>
+
+    <div class="ganar">
+        <img src="img/ganar.gif" alt="">
+        <input class="volver" type="submit" value="VOLVER" onclick="document.location.reload()"/>
+    </div>
+
+    <div class="perder">
+        <img src="img/perder.gif" alt="">
+        <input class="volver" type="submit" value="VOLVER" onclick="document.location.reload()"/>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
