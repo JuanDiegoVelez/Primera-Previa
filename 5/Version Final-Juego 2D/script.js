@@ -64,7 +64,6 @@ var cantidadMisiles = 3;
 var colorCanvas1 = "#f2f2f2f2";
 canvas.style.backgroundColor = colorCanvas1;
 var colorCanvas2 = "#222222";
-var colorFigura = "#ff0000";
 var colorBola = "#6317B9";
 var colorBola2 = "#2196f3";
 var colorPaleta = "#f5d109";
